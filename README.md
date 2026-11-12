@@ -1,35 +1,26 @@
-# Claudiu-Florian Fugulin
+## Claudiu Fugulin
 
-Robotics & Mechatronics graduate, currently pursuing a Master's degree at Politehnica University of Bucharest (FIIR). 
+I finished my Bachelor's in Robotics at Transilvania University of Brașov in 2026 and I'm now doing a Master's in Applied Informatics in Industrial Engineering at Politehnica Bucharest (FIIR).
 
-My work centers on hands-on mechatronics: CAD design, dynamic modeling and control in MATLAB/Simulink, and embedded firmware on ESP32.
+Most of my projects mix mechanical, electrical and software work. For my thesis I designed the motor coupling in CATIA and 3D printed it, wired the stepper driver and power supply, and wrote the ESP32 firmware. I'm looking for work in robotics, embedded systems, industrial automation, electrical work, CNC machining or mechanical design.
 
----
+### What I've built
 
-### Core Skills
+**[Automatic guitar tuner](https://github.com/fclaudiu19/polyphonic-guitar-tuner-mechatronics)** (Bachelor's thesis)
+An ESP32-S3 listens to a string through a microphone, finds the pitch with an FFT and turns the tuning key with a stepper motor until the string is within ±5 cents. The raw pitch readings jumped around too much to use, so I put them through median, IIR and Kalman filters. That brought the noise down from about 34 cents to about 5.
 
-* **CAD & Manufacturing:** CATIA V5 (Part & Assembly Design, Drafting), 3D printing (Bambu Lab P1S, slicing & rapid prototyping).
-* **Robotics & Control:** Kinematics, dynamics, trajectory planning, PID & computed torque control (MATLAB & Simulink).
-* **Embedded Systems:** ESP32, C/C++, FreeRTOS, I2S audio, stepper drivers (TMC2209, A4988).
-* **Software & Tools:** Python, C++, MATLAB, Git/GitHub, Linux basics.
+**[SCARA robot dynamics and control](https://github.com/fclaudiu19/scara-robot-dynamics-control)**
+Kinematics and dynamics of a SCARA arm in MATLAB. In Simulink I compared independent-joint PID, computed torque and a coupled MIMO controller on the same trajectory.
 
----
+**[Helical gearbox](https://github.com/fclaudiu19/industrial-gearbox-design)**
+A single-stage speed reducer in CATIA V5, with the gear, shaft and bearing calculations, the full assembly and the manufacturing drawings.
 
-### Key Projects
+### Tools I use
 
-* **[Adaptive Polyphonic Automated Guitar Tuner](https://github.com/fclaudiu19/automated-guitar-tuner-mechatronics)**  
-  Closed-loop mechatronic system that samples acoustic vibrations via an I2S microphone, computes fundamental frequencies using real-time FFT on an ESP32, and adjusts string tension with NEMA 17 steppers.
+CATIA V5, SolidWorks, MATLAB/Simulink, C/C++, Python, ESP32, Git, 3D printing (Bambu Lab P1S)
 
-* **[SCARA Robotic Manipulator Dynamics & Control](https://github.com/fclaudiu19/scara-robot-dynamics-control)**  
-  Direct/inverse kinematics, dynamic equations of motion, trajectory generation, and simulation of classical vs. computed torque control schemes in MATLAB & Simulink.
-
-* **[Industrial Helical Gearbox Design](https://github.com/fclaudiu19/industrial-gearbox-design)**  
-  Single-stage speed reducer modeled in CATIA V5. Includes full parametric assembly, 2D manufacturing drawings, standardized ISO hardware, and shaft/bearing sizing calculations.
-
----
+On the electrical side I've drawn wiring diagrams, set up 12 V / 5 V power distribution and configured an industrial stepper driver (Nanotec C5-01). I also spent the summers of 2022 and 2023 as a technical inspection assistant, doing NDT (UT, MT, PT) and dimensional checks.
 
 ### Contact
 
-* **Email:** fugulinclaudiu@gmail.com
-* **LinkedIn:** [Claudiu-Florian Fugulin](www.linkedin.com/in/claudiufugulin)
-* **Location:** Bucharest, Romania
+fugulinflorian@gmail.com · [LinkedIn](https://www.linkedin.com/in/claudiufugulin) · Bucharest, Romania
