@@ -7,12 +7,15 @@ Most of my projects mix mechanical, electrical and software work. For my thesis 
 ### What I've built
 
 **[Automatic guitar tuner](https://github.com/fclaudiu19/polyphonic-guitar-tuner-mechatronics)** (Bachelor's thesis)
+
 An ESP32-S3 listens to a string through a microphone, finds the pitch with an FFT and turns the tuning key with a stepper motor until the string is within ±5 cents. The raw pitch readings jumped around too much to use, so I put them through median, IIR and Kalman filters. That brought the noise down from about 34 cents to about 5.
 
-**[SCARA robot dynamics and control](https://github.com/fclaudiu19/scara-robot-dynamics-control)**
-Kinematics and dynamics of a SCARA arm in MATLAB. In Simulink I compared independent-joint PID, computed torque and a coupled MIMO controller on the same trajectory.
+**[Robot arm dynamics and control](https://github.com/fclaudiu19/scara-robot-dynamics-control)**
+
+Dynamic model of a two-axis arm (rotary base, lead-screw linear axis) in MATLAB, including the DC motors and gearboxes. In Simulink, computed torque control cut the tracking error about 30 times compared with independent joint PID, for the same motor effort.
 
 **[Helical gearbox](https://github.com/fclaudiu19/industrial-gearbox-design)**
+
 A single-stage speed reducer in CATIA V5, with the gear, shaft and bearing calculations, the full assembly and the manufacturing drawings.
 
 ### Tools I use
